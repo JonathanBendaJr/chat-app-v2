@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+import logo from '../assets/chat.png';
+
 const projectID = 'ef75f765-e3db-459a-b53d-c281fbc74790';
 
 const Modal = () => {
@@ -28,8 +30,11 @@ const Modal = () => {
 
   return (
     <div className="wrapper">
+      <img className="logo-Image" src={logo} alt="Logo" />;
       <div className="form">
-        <h1 className="title">Spike Chat Application</h1>
+        <h1 className="title">Spike Chat</h1>
+        <br></br>
+        <br></br>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
