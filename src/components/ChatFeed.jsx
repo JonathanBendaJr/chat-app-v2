@@ -51,6 +51,8 @@ const ChatFeed = (props) => {
           {chat.people.map((person) => ` ${person.person.username}`)}
         </div>
       </div>
+      <hr className="header-line"></hr>
+      <br></br>
       {renderMessages()}
       <div style={{ height: '100px' }} />
       <div className="message-form-container">
