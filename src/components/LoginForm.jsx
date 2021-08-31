@@ -30,8 +30,9 @@ const Modal = () => {
 
   return (
     <div className="wrapper">
-      <img className="logo-Image" src={logo} alt="Logo" />;
+      
       <div className="form">
+      <img className="logo-Image" src={logo} alt="Logo" />
         <h1 className="title">Spike Chat</h1>
         <br></br>
         <br></br>
